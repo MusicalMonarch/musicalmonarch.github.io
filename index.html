@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Portal Home Page</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <header>
             <div class="border-card">
                 <h1>Alyssa T. A. Lahoy</h1>
-                <img src="images/aly-self.jpg" alt="my picture">
+                <img src="assets/images/aly-self.jpg" alt="my picture">
             </div>
         </header>
 
@@ -31,11 +31,13 @@
 
         <footer>
             <div class="border-card">
-                <p>&copy; 2020 | Alyssa T. A. Lahoy | California | <a href=" https://www.byui.edu/online">BYUI
+                <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California | <a href=" https://www.byui.edu/online">BYUI
                         Online Learning</a></p>
-                <p>Last Updated: 9/18/2020</p>
+                <p>Last Updated: <span id="update-date"></span></p>
             </div>
         </footer>
     </div>
+
+    <script src="assets/scripts/index.js"></script>
 </body>
 </html>
