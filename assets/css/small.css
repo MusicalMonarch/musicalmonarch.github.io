@@ -3,7 +3,15 @@
 body {
     background-color: #d8e1e9;
     margin: 0;
+    font-family: 'Manrope', sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
 }
+
+main {
+    padding: 3% 4%;
+}
+
 
 img {
     width: 200px;
@@ -31,6 +39,13 @@ h1, h2 {
     color: #342e37;
 }
 
+hr {
+    border: 1px solid #342e37;
+    width: 80%;
+    text-align: left;
+    margin-left: 0;
+}
+
 a {
     color: #7392b7;
     text-decoration: none;
@@ -49,15 +64,6 @@ footer a {
     color: #d8e1e9;
 }
 
-/* Classes */
 
-.content {
-    font-family: 'Manrope', sans-serif;
-    max-width: 1100px;
-    margin: 0 auto;
-}
 
-.main-sect {
-    padding: 3% 4%;
-}
 
