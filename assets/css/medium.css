@@ -1,2 +1,26 @@
 
-@media (min-width:32.5em) {}
+@media only screen and (min-width:32.5em) {
+    
+    header{
+        text-align: left;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    hr {
+        width: 82%;
+    }
+
+    img {
+        width: 200px;
+        border-radius: 100%;
+        float: right;
+    }
+}
