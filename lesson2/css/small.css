@@ -1,0 +1,140 @@
+/* --Elements in hierarchical order-- */
+
+body {
+    background-color: #f0f8ea;
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 3% 4% 5%;
+}
+
+
+img {
+    width: 150px;
+}
+
+header {
+    margin: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+header, footer {
+    background-color: #a8c686;
+    padding: 2% 4%;
+    margin: 0;
+    text-align:center;
+}
+
+footer {
+    border-radius: 15px 15px 0 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #B14021;
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Lobster', cursive;
+}
+
+h2, a {
+    color: #e4572e;
+}
+
+hr {
+    border: 1px solid #a8c686;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9D9C62;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+section {
+    padding: 2% 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* --Grid Layouts-- */
+
+#visual-hierarchy, #proximity {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20px 1fr 80px 1fr 15px;
+    grid-gap: 15px;
+    align-items: center;
+}
+
+#visual-hierarchy h2, #proximity h2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+}
+
+#visual-hierarchy img, #proximity img {
+    grid-column: 1 / 2;
+    grid-row: 2 / span 3;
+}
+
+#visual-hierarchy p:nth-of-type(1), #proximity p:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: end;
+}
+
+#visual-hierarchy p:nth-of-type(2), #proximity p:nth-of-type(2) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    align-self: start;
+}
+
+#repetition {
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20px 1fr 80px 1fr 15px;
+    grid-gap: 15px;
+    align-items: center;
+}
+
+#repetition h2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: end;
+}
+
+#repetition img {
+    grid-column: 2 / 3;
+    grid-row: 2 / span 3;
+}
+
+#repetition p:nth-of-type(1) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    align-self: end;
+}
+
+#repetition p:nth-of-type(2) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    align-self: start;
+}
