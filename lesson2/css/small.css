@@ -4,7 +4,6 @@ body {
     background-color: #f0f8ea;
     margin: 0;
     font-family: 'Epilogue', sans-serif;
-    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -35,14 +34,14 @@ footer {
 
 h1 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #B14021;
     font-family: 'Lobster', cursive;
 }
 
 h2 {
     margin: 0;
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'Lobster', cursive;
 }
 
@@ -77,64 +76,30 @@ p {
 
 /* --Grid Layouts-- */
 
-#visual-hierarchy, #proximity {
+#visual-hierarchy, #proximity, #repetition {
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 15px 1fr 80px 1fr 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 60px repeat(2, 1fr);
     grid-gap: 15px;
     align-items: center;
+    justify-items: center;
 }
 
-#visual-hierarchy h2, #proximity h2 {
-    grid-column: 2 / 3;
+#visual-hierarchy h2, #proximity h2, #repetition h2 {
+    grid-row: 1 / 2;
+    align-self: end;
+}
+
+#visual-hierarchy img, #proximity img, #repetition img {
+    grid-row: 3 / 4;
+}
+
+#visual-hierarchy p:nth-of-type(1), #proximity p:nth-of-type(1), #repetition p:nth-of-type(1) {
     grid-row: 2 / 3;
     align-self: end;
 }
 
-#visual-hierarchy img, #proximity img {
-    grid-column: 1 / 2;
-    grid-row: 2 / span 3;
-}
-
-#visual-hierarchy p:nth-of-type(1), #proximity p:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    align-self: end;
-}
-
-#visual-hierarchy p:nth-of-type(2), #proximity p:nth-of-type(2) {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    align-self: start;
-}
-
-#repetition {
-    display:grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 15px 1fr 80px 1fr 15px;
-    grid-gap: 15px;
-    align-items: center;
-}
-
-#repetition h2 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    align-self: end;
-}
-
-#repetition img {
-    grid-column: 2 / 3;
-    grid-row: 2 / span 3;
-}
-
-#repetition p:nth-of-type(1) {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    align-self: end;
-}
-
-#repetition p:nth-of-type(2) {
-    grid-column: 1 / 2;
+#visual-hierarchy p:nth-of-type(2), #proximity p:nth-of-type(2), #repetition p:nth-of-type(2) {
     grid-row: 4 / 5;
     align-self: start;
 }
