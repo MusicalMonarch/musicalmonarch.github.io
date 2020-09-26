@@ -31,6 +31,7 @@
         grid-template-rows: 15px 1fr 80px 1fr 15px;
         grid-gap: 15px;
         align-items: center;
+        justify-items: left;
     }
 
     #visual-hierarchy h2,
