@@ -14,11 +14,20 @@
         font-size: 1.5em;
     }
 
-    hr {
-        width: 82%;
-    }
-
     img {
         width: 200px;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 0 2%;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        padding: 7% 0;
     }
 }
