@@ -1,0 +1,41 @@
+
+@media only screen and (min-width: 35em) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    header img {
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+}

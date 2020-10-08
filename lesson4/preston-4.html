@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Epilogue&display=swap" rel="stylesheet">
 </head>
 
@@ -17,11 +18,11 @@
     <header>
         <img src="images/weathersideicon.svg" alt="my picture">
         <h1>iDec Weather</h1>
-        <p>Punch that weather right in the face.</p>
+        <p><i>Punch that weather right in the face.</i></p>
 
-        <nav>
-            <button>&#9776;</button>
-            <ul>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
@@ -32,21 +33,21 @@
         </nav>
     </header>
 
-    <main>
+    <main>    
         <h2>Preston Idaho</h2>
-        <section class="placeholder-sect">
+        <section>
             <p>Hero Image/Weather Summary</p>
         </section>
 
-        <section class="placeholder-sect">
+        <section>
             <p>Five Day Forecast</p>
         </section>
 
-        <section class="placeholder-sect">
+        <section>
             <p>Article</p>
         </section>
 
-        <section class="placeholder-sect">
+        <section>
             <p>Contact Info</p>
         </section>
     </main>
@@ -58,7 +59,7 @@
         <p>Last Updated: <span id="update-date"></span></p>
     </footer>
 
-    <script src="assets/scripts/index.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
