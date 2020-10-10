@@ -2,24 +2,19 @@
 @media only screen and (min-width: 35em) {
 
     body {
-        font-size: 1rem;
-    }
-
-    header img {
-        max-width: 200px;
+        font-size: 0.8rem;
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     nav {
         padding: 0;
-        text-align: center;
     }
 
     nav button {
@@ -36,6 +31,10 @@
 
     nav ul li {
         float: left;
+    }
+
+    main {
+        margin: 0 auto;
     }
 
 }
