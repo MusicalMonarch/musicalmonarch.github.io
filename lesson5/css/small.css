@@ -5,6 +5,7 @@ body {
     font-family: 'Epilogue', sans-serif;
     font-size: 0.8rem;
     color: #223843;
+    text-align: center;
 }
 
 header, footer {
@@ -22,6 +23,10 @@ header img {
     float: left;
 }
 
+header p {
+    margin-top: 0;
+}
+
 h1, h2, h3 {
     font-family: 'Crete Round', serif;
     color: #481620;
@@ -34,7 +39,7 @@ h2 {
 }
 
 nav {
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     text-align: center;
     background-color: #481620;
@@ -72,13 +77,14 @@ nav ul li a:hover {
 }
 
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 
 main {
     max-width: 90%;
     padding: 15px;
+    margin: 0 auto;
 }
 
 a {
@@ -90,13 +96,6 @@ a:hover {
     color: #FAF33E;
 }
 
-section {
-    background-color: rgba(192, 192, 192, 0.5);
-    border: 1px solid #555;
-    padding: 25px;
-    margin-bottom: 10px;
-}
-
 footer {
     padding: 15px;
     text-align: center;
@@ -106,9 +105,38 @@ footer a {
     color: #481620;
 }
 
+.logo-title {
+    margin: 0 auto;
+    width: 75%;
+    position: relative;
+}
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.placeholder {
+    background-color: rgba(192, 192, 192, 0.5);
+    border: 1px solid #555;
+    margin-bottom: 10px;
+}
+
+.hero-div {
+    margin: 10px auto;
+    position: relative;
+    max-width: 100%;
+}
+
+.hero-div img {
+    position: relative;
+    max-width: 100%;
+}
+
+.weather-summary {
+    position: absolute;
+    background-color: rgba(192, 192, 192, 0.5);
+    bottom: 3rem;
 }
 

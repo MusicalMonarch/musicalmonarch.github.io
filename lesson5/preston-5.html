@@ -7,7 +7,7 @@
     <meta name="description" content="Preston Town Page for lesson 4">
     <title>Preston Town, Idaho</title>
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -17,11 +17,13 @@
 
 <body>
     <header>
-        <img src="images/weathersideicon.svg" alt="my picture">
-        <h1>iDec Weather</h1>
-        <p><i>Punch that weather right in the face.</i></p>
+        <div class="logo-title">
+            <img src="images/weathersideicon.svg" alt="my picture">
+            <h1>iDec Weather</h1>
+            <p><i>Punch that weather right in the face.</i></p>
+        </div>
 
-        <nav class="clearfix">
+        <nav>
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="#">Home</a></li>
@@ -36,21 +38,24 @@
 
     <main>    
         <h2>Preston Idaho</h2>
-        <section>
-            <h3>Hero Image/Weather Summary</h3>
-        </section>
+        <div class="hero-div">
+            <img src="images/preston-img.jpg" alt="Preston image">
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+            </section>
+        </div>
 
-        <section>
-            <h3>Five Day Forecast</h3>
-        </section>
+        <div class="placeholder">
+            <p>Five Day Forecast</p>
+        </div>
 
-        <section>
-            <h3>Article</h3>
-        </section>
+        <div class="placeholder">
+            <p>Article</p>
+        </div>
 
-        <section>
-            <h3>Contact Info</h3>
-        </section>
+        <div class="placeholder">
+            <p>Contact Info</p>
+        </div>
 
         <a href="../index.html">Return to Home Portal</a>
     </main>
