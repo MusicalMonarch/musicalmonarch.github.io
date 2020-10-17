@@ -17,6 +17,10 @@
         font-size: 1.6rem;
     }
 
+    h3 {
+        font-size: 1.4rem;
+    }
+
     nav {
         padding: 0;
         display: flex;

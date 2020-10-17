@@ -9,13 +9,14 @@ body {
 }
 
 header, footer {
+    margin: 0 auto;
     width: 100%;
     background-color: #F79256;
     text-align: center;
 }
 
 header {
-    padding: 15px 0 0;
+    padding: 5em 2em;
 }
 
 header img {
@@ -24,7 +25,7 @@ header img {
 }
 
 header p {
-    margin-top: 0;
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -108,7 +109,6 @@ footer a {
 .logo-title {
     margin: 0 auto;
     width: 75%;
-    position: relative;
 }
 
 .clearfix:after {
@@ -123,13 +123,13 @@ footer a {
     margin-bottom: 10px;
 }
 
-.hero-div {
+.hero {
     margin: 10px auto;
     position: relative;
     max-width: 100%;
 }
 
-.hero-div img {
+.hero img {
     position: relative;
     max-width: 100%;
 }
@@ -140,3 +140,13 @@ footer a {
     bottom: 3rem;
 }
 
+#announcement-alert {
+    display: none;
+    background-color: #FAF33E;
+    color: #481620;
+    padding: 1.5em;
+}
+
+#announcement-alert p {
+    margin: 0;
+}

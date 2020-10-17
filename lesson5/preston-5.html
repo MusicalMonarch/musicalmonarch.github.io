@@ -16,46 +16,62 @@
 </head>
 
 <body>
+    <div id="announcement-alert">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
     <header>
-        <div class="logo-title">
             <img src="images/weathersideicon.svg" alt="my picture">
             <h1>iDec Weather</h1>
             <p><i>Punch that weather right in the face.</i></p>
-        </div>
-
-        <nav>
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="#">Home</a></li>
-                <li class="active"><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
 
     <main>    
         <h2>Preston Idaho</h2>
-        <div class="hero-div">
+        <section class="hero">
             <img src="images/preston-img.jpg" alt="Preston image">
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
             </section>
-        </div>
+        </section>
 
-        <div class="placeholder">
-            <p>Five Day Forecast</p>
-        </div>
+        <section class="forecast">
+            <h3>Five Day Forecast</h3>
+            <ul class="five-day-cast">
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+            </ul>
+        </section>
 
-        <div class="placeholder">
-            <p>Article</p>
-        </div>
+        <section class="article">
+            <h3>Southeast Idaho School District Issues Mask Mandate</h3>
+            <p>In an effort to maintain in-class instruction in spite of the increased numbers of COVID-19 that have been confirmed in Franklin County, the Preston School District has adopted new, temporary regulations, said superintendent Marc Gee.</p>
+            <p>The following adjustments have been made following input from county commissioners, Franklin County Medical Center, Southeast Idaho Public Health, and parents.</p>
+            <a href="https://www.idahostatejournal.com/news/local/southeast-idaho-school-district-issues-mask-mandate/article_6aff0811-697d-53ed-b42f-6ce3f99a073c.html">Read More</a>
+        </section>
 
-        <div class="placeholder">
-            <p>Contact Info</p>
-        </div>
+        <section class="contact-info">
+            <h3>Contact Info</h3>
+            <ul>
+                <li>Phone number</li>
+                <li>Email address</li>
+            </ul>
+        </section>
 
         <a href="../index.html">Return to Home Portal</a>
     </main>
