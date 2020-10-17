@@ -21,9 +21,11 @@
     </div>
 
     <header>
-            <img src="images/weathersideicon.svg" alt="my picture">
+        <img src="images/weathersideicon.svg" alt="my picture">
+        <div>
             <h1>iDec Weather</h1>
             <p><i>Punch that weather right in the face.</i></p>
+        </div>      
     </header>
 
     <nav>
@@ -42,19 +44,40 @@
         <h2>Preston Idaho</h2>
         <section class="hero">
             <img src="images/preston-img.jpg" alt="Preston image">
-            <section class="weather-summary">
+            <div class="weather-summary card">
                 <h3>Weather Summary</h3>
-            </section>
+                <ul>
+                    <li>Currently: <span class="weather-summary-data">Mostly cloudy</span></li>
+                    <li>High: <span class="weather-summary-data">67&#176;F</span></li>
+                    <li>Humidity: <span class="weather-summary-data">32%</span></li>
+                    <li>Wind Speed: <span class="weather-summary-data">17 mph</span></li>
+                </ul>
+            </div>
         </section>
 
         <section class="forecast">
             <h3>Five Day Forecast</h3>
-            <ul class="five-day-cast">
-                <li>Monday</li>
-                <li>Tuesday</li>
-                <li>Wednesday</li>
-                <li>Thursday</li>
-                <li>Friday</li>
+            <ul>
+                <li class="card">
+                    <h4>Monday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                </li>
+                <li class="card">
+                    <h4>Tuesday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                </li>
+                <li class="card">
+                    <h4>Wednesday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                </li>
+                <li class="card">
+                    <h4>Thursday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                </li>
+                <li class="card">
+                    <h4>Friday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                </li>
             </ul>
         </section>
 
@@ -66,24 +89,29 @@
         </section>
 
         <section class="contact-info">
-            <h3>Contact Info</h3>
-            <ul>
-                <li>Phone number</li>
-                <li>Email address</li>
-            </ul>
-        </section>
-
-        <a href="../index.html">Return to Home Portal</a>
+            <img src="images/preston-map.JPG" alt="Map of Preston" class="card">
+            <div>
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>555-555-5555</li>
+                    <li>idecweathers@email.com</li>
+                </ul>
+            </div>
+            
+        </section>   
     </main>
 
+    <!-- Footer down here, stays mainly the same with each assignment -->
     <footer>
         <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California | <a
                 href=" https://www.byui.edu/online">BYUI
                 Online Learning</a></p>
         <p>Last Updated: <span id="update-date"></span></p>
+        <a href="../index.html">Return to Home Portal</a> 
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/9d873b5877.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

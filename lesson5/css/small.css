@@ -1,7 +1,6 @@
 
 body {
     margin: 0 auto;
-    width: 100%;
     font-family: 'Epilogue', sans-serif;
     font-size: 0.8rem;
     color: #223843;
@@ -10,16 +9,17 @@ body {
 
 header, footer {
     margin: 0 auto;
-    width: 100%;
     background-color: #F79256;
-    text-align: center;
 }
 
 header {
-    padding: 5em 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 1em;
 }
 
 header img {
+    margin: 0 auto;
     max-width: 75px;
     float: left;
 }
@@ -28,7 +28,7 @@ header p {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Crete Round', serif;
     color: #481620;
     margin: 0;
@@ -39,9 +39,12 @@ h2 {
     padding: 5px 0 15px;
 }
 
+h3 {
+    margin-bottom: 1em;
+}
+
 nav {
     margin: 0 auto;
-    width: 100%;
     text-align: center;
     background-color: #481620;
     padding: 12px 0;
@@ -53,12 +56,6 @@ nav button {
     border: 1px solid rgba(274,146,86,1);
     color: #F79256;
     border-radius: 3px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul.hide {
@@ -84,8 +81,19 @@ nav ul li.active a {
 
 main {
     max-width: 90%;
-    padding: 15px;
+    padding: 1em 1em 0;
     margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-top: 2em;
+    text-align: left;
 }
 
 a {
@@ -98,7 +106,7 @@ a:hover {
 }
 
 footer {
-    padding: 15px;
+    padding: 1.2em;
     text-align: center;
 }
 
@@ -117,27 +125,52 @@ footer a {
     clear: both;
 }
 
-.placeholder {
-    background-color: rgba(192, 192, 192, 0.5);
-    border: 1px solid #555;
-    margin-bottom: 10px;
-}
-
 .hero {
     margin: 10px auto;
-    position: relative;
     max-width: 100%;
 }
 
 .hero img {
-    position: relative;
     max-width: 100%;
 }
 
 .weather-summary {
-    position: absolute;
-    background-color: rgba(192, 192, 192, 0.5);
-    bottom: 3rem;
+    background-color: rgb(228, 228, 228);
+    padding: 1.2em;
+    top: 1em;
+    left: 3em;
+}
+
+.weather-summary-data {
+    color: #F79256;
+}
+
+.forecast {
+    display: none;
+}
+
+.contact-info {
+    padding: 1em 1.5em;
+    background-color: rgb(228, 228, 228);
+    color: #481620;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-info div {
+    margin-top: 0.8em;
+}
+
+.card {
+    box-shadow: 5px 5px 3px #481620;
+    border-radius: 10px;
 }
 
 #announcement-alert {
