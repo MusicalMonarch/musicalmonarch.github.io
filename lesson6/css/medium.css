@@ -1,0 +1,126 @@
+
+@media only screen and (min-width: 40.5em) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        flex-direction: row;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+    }
+
+    header img {
+        max-width: 90px;
+        margin: 0;
+    }
+
+    header div {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 0;
+        display: flex;
+        flex: 1 1 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .logo-title {
+        width: 55%;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        position: relative;
+    }
+
+    .weather-summary {
+        position: absolute;
+        background-color: rgba(247, 146, 86, 0.8);
+    }
+
+    .weather-summary-data {
+        color: #FAF33E;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+    .forecast ul {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .forecast ul li {
+        margin: 0.5em 0.2em;
+        padding: 1.5em;
+        background-color: rgb(228, 228, 228);
+        color: #481620;
+    }
+
+    .forecast ul li i {
+        color: #F79256;
+        display: block;
+    }
+
+    .contact-info {
+        flex-direction: row;
+    }
+
+    .contact-info img {
+        width: 65%;
+        margin: 0 0.8em 0 0;
+    }
+
+}

@@ -1,0 +1,48 @@
+
+@media only screen and (min-width: 1250px) {
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    header img {
+        max-width: 120px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    main {
+        max-width: 75%;
+    }
+
+    footer {
+        max-width: 75%;
+    }
+
+    .logo-title {
+        width: 30%;
+    }
+
+    .forecast ul li {
+        margin: 0.5em 2em;
+    }
+
+    .contact-info img {
+        width: 50%;
+    }
+
+}
