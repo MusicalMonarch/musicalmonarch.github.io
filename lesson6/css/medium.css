@@ -119,6 +119,10 @@
         flex-direction: row;
     }
 
+    .contact-info div {
+        text-align: left;
+    }
+
     .contact-info img {
         width: 65%;
         margin: 0 0.8em 0 0;

@@ -53,10 +53,10 @@
                 <h3>Weather Summary</h3>
                 <ul>
                     <li>Currently: <span class="weather-summary-data">Mostly cloudy</span></li>
-                    <li>High: <span class="weather-summary-data">67&#176;F</span></li>
+                    <li>High: <span class="weather-summary-data"><span id="temp">67</span>&#176;F</span></li>
                     <li>Humidity: <span class="weather-summary-data">32%</span></li>
-                    <li>Wind Speed: <span class="weather-summary-data">17 mph</span></li>
-                    <li>Wind Chill: <span class="weather-summary-data" id=""></span></li>
+                    <li>Wind Speed: <span class="weather-summary-data"><span id="windSpeed">17</span> mph</span></li>
+                    <li>Wind Chill: <span class="weather-summary-data"><span id="windChill"></span>&#176;F</span></li>
                 </ul>
             </div>
         </section>
@@ -100,12 +100,7 @@
         </section>
 
         <section class="contact-info">
-            <picture>
-                <source media="(max-width: 639px)" srcset="images/preston-map-416.jpg">
-                <source media="(min-width: 640px) and (max-width: 1249px)" srcset="images/preston-map-900.jpg">
-                <source media="(min-width: 1250px)" srcset="images/preston-map-1100.jpg">
-                <img src="images/preston-map-1100.JPG" alt="Map of Preston" class="card">
-            </picture>
+            <img srcset="images/preston-map-416.jpg 416w, images/preston-map-900.jpg 900w, images/preston-map-1100.jpg 1100w" sizes="(max-width: 639px) 416px, (max-width: 1249px) 900px, 1100px" src="images/preston-map-1100.JPG" alt="Map of Preston" class="card">
             <div>
                 <h3>Contact Info</h3>
                 <ul>
@@ -127,6 +122,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
     <script src="https://kit.fontawesome.com/9d873b5877.js" crossorigin="anonymous"></script>
     <script>
         WebFont.load({
