@@ -84,6 +84,7 @@
     .weather-summary {
         position: absolute;
         background-color: rgba(247, 146, 86, 0.8);
+        text-align: left;
     }
 
     .weather-summary-data {

@@ -43,7 +43,12 @@
     <main>    
         <h2>Preston Idaho</h2>
         <section class="hero">
-            <img srcset="images/lesson6-400.jpg 400w, images/lesson6-900.jpg 900w, images/lesson6-1300.jpg 1300w" sizes="(max-width: 400px) 400px, (max-width: 900px) 900px, 1300px" src="images/lesson6-1300.jpg" alt="WDD 230 hero image">
+            <picture>
+                <source media="(max-width: 639px)" srcset="images/lesson6-318.jpg">
+                <source media="(min-width: 640px) and (max-width: 1249px)" srcset="images/lesson6-900.jpg">
+                <source media="(min-width: 1250px)" srcset="images/lesson6-1300.jpg">
+                <img src="images/lesson6-1300.jpg" alt="WDD 230 hero image">
+            </picture>
             <div class="weather-summary card">
                 <h3>Weather Summary</h3>
                 <ul>
@@ -51,6 +56,7 @@
                     <li>High: <span class="weather-summary-data">67&#176;F</span></li>
                     <li>Humidity: <span class="weather-summary-data">32%</span></li>
                     <li>Wind Speed: <span class="weather-summary-data">17 mph</span></li>
+                    <li>Wind Chill: <span class="weather-summary-data" id=""></span></li>
                 </ul>
             </div>
         </section>
@@ -94,7 +100,12 @@
         </section>
 
         <section class="contact-info">
-            <img src="images/preston-map.JPG" alt="Map of Preston" class="card">
+            <picture>
+                <source media="(max-width: 639px)" srcset="images/preston-map-416.jpg">
+                <source media="(min-width: 640px) and (max-width: 1249px)" srcset="images/preston-map-900.jpg">
+                <source media="(min-width: 1250px)" srcset="images/preston-map-1100.jpg">
+                <img src="images/preston-map-1100.JPG" alt="Map of Preston" class="card">
+            </picture>
             <div>
                 <h3>Contact Info</h3>
                 <ul>
@@ -117,6 +128,13 @@
 
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/9d873b5877.js" crossorigin="anonymous"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Epilogue','Crete Round']
+            }
+        });
+    </script>
 </body>
 
 </html>
