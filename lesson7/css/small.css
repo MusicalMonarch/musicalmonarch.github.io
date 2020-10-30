@@ -190,4 +190,32 @@ footer a {
     margin: 0;
 }
 
+/* Weather Gallery */
+
+figure {
+    display: grid;
+    width: 80%;
+    grid-template-rows: 1fr 2em;
+    grid-template-columns: 1fr;
+}
+
+figure img {
+    grid-row: 1/2;
+    width: 100%;
+    margin: 0 auto;
+}
+
+figcaption {
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 0;
+    grid-row: 2/3;
+    align-content: center;
+}
+
 /* Weather Gallery Grid */
+
+#gallery {
+    display: block;
+}
