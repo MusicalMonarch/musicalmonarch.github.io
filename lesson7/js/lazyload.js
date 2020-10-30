@@ -7,8 +7,7 @@ const imagesLoading = document.querySelectorAll("img[data-src]");
 
 //some optional parameters for the IntersectionalObserver
 const imgOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px 50px 0px"
+    threshold: 0.5
 }
 
 //arrow function that will switch the data from data-src to src and then removes the data-src attribute on load
