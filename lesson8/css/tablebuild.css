@@ -1,0 +1,46 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+thead th {
+    font-size: 1.8em;
+}
+
+tfoot td {
+    font-size: 0.8em;
+}
+
+
+#sales-data {
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 0;
+    box-shadow: 5px 5px 20px;
+}
+
+#sales-data th, #sales-data td {
+    padding: 0.5em;
+}
+
+#sales-data thead, #sales-data tfoot {
+    background-color: #7fb9c2;
+}
+
+#sales-data tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+#sales-data tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+#sales-data tbody tr:first-child {
+    background-color: #628ca6;
+    color: white;
+}
