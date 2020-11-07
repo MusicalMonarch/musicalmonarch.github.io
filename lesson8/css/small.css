@@ -260,6 +260,10 @@ form label.storm-deets input, form label.storm-deets select {
     padding: 0.5rem;
 }
 
+form label.danger-level {
+    display: block;
+}
+
 form label.user-info input:required {
     border-left: #481620 solid 6px;
 }
