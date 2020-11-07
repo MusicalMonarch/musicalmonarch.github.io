@@ -191,4 +191,10 @@
         grid-row: 5/6;
     }
 
+    /* Storm Center */
+
+    form input.submitBtn {
+        width: 30%;
+    }
+
 }
