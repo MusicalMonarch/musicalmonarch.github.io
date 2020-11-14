@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston Town Page for lesson 4">
+    <title>Preston Town, Idaho</title>
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Epilogue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="announcement-alert">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <img src="images/weathersideicon.svg" alt="my picture">
+        <div>
+            <h1>iDec Weather</h1>
+            <p><i>Punch that weather right in the face.</i></p>
+        </div>      
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-9.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>    
+        <h2>Home Page</h2> 
+    </main>
+
+    <!-- Footer down here, stays mainly the same with each assignment -->
+    <footer>
+        <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California | <a
+                href=" https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+        <p>Last Updated: <span id="update-date"></span></p>
+        <a href="../index.html">Return to Home Portal</a> 
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://kit.fontawesome.com/9d873b5877.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Epilogue','Crete Round']
+            }
+        });
+    </script>
+</body>
+
+</html>
