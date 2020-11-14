@@ -197,4 +197,34 @@
         width: 30%;
     }
 
+    /* Home page */
+
+    .town-cards section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .town-cards section img {
+        max-width: 100%;
+    }
+
+    .town-cards section:nth-child(even) div.town-info {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .town-cards section:nth-child(even) img {
+        grid-column: 2;
+    }
+
+    .town-cards section:nth-child(even) div.town-info {
+        grid-column: 2/3;
+    }
+
+    .town-cards section:nth-child(even) img {
+        grid-column: 1/2;
+    }
+
 }

@@ -2,7 +2,7 @@
 @media only screen and (min-width: 1250px) {
 
     body {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     main {
@@ -102,6 +102,24 @@
     figure:nth-of-type(9) {
         grid-column: 3/4;
         grid-row: 3/4;
+    }
+
+    /* Home page grid */
+
+    .town-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .town-cards section {
+        display: block;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .town-cards p {
+        margin-top: 0;
     }
 
 }
