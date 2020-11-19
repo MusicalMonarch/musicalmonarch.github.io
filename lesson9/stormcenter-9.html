@@ -61,7 +61,7 @@
                     <option value="Tornado">Tornado</option>
                 </datalist>
 
-                <label class="storm-deets">Storm Severity <input type="range" min="0" max="10"></label>
+                <label class="storm-deets">Storm Severity: <span id="severityVal"><b>5</b></span><input type="range" name="severity" min="0" max="10" onchange="updateTextInput(this.value);"></label>
                 <label class="storm-deets">Storm Region
                     <select name="stormRegion">
                         <option value="" selected disabled>Select Region...</option>

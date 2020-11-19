@@ -261,6 +261,9 @@ form label.user-info input, form label.user-info textarea {
 }
 
 form label.storm-deets input, form label.storm-deets select {
+    border: solid 1px #999;
+    color: #555;
+    background-color: rgba(0, 0, 0, 0.1);
     display: block;
     padding: 0.5rem;
 }
@@ -288,6 +291,10 @@ form input.submitBtn {
 
 form input.submitBtn:hover {
     background-color: #FAF33E;
+}
+
+#severityVal {
+    color: #F78256;
 }
 
 /* Home page */
