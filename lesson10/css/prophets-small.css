@@ -1,0 +1,30 @@
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #564bad;
+}
+
+section {
+    background-color: #c4bdd9;
+    border: 1px solid #564bad;
+}
+
+img {
+    width: 90%;
+}
+
+.cards {
+    padding: 2%;
+    background-color: #dbdbdb;
+    box-shadow: 0 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
