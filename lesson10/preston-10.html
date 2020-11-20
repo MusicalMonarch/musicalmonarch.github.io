@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston Town Page for lesson 4">
+    <title>Preston Town, Idaho</title>
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Epilogue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="announcement-alert">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <img src="images/weathersideicon.svg" alt="my picture">
+        <div>
+            <h1>iDec Weather</h1>
+            <p class="slogan"><i>Punch that weather right in the face.</i></p>
+        </div>      
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-9.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>    
+        <h2>Preston Idaho</h2>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 639px)" srcset="images/preston/preston-img-350.jpg">
+                <source media="(min-width: 640px) and (max-width: 1249px)" srcset="images/preston/preston-img-640.jpg">
+                <source media="(min-width: 1250px)" srcset="images/preston/preston-img-1245.jpg">
+                <img src="images/preston/lesson6-1300.jpg" alt="WDD 230 hero image">
+            </picture>
+            <div class="weather-summary card">
+                <h3>Weather Summary</h3>
+                <ul>
+                    <li>Current Temperature: <span class="weather-summary-data" id="current-temp">&#176;F</span></li>
+                    <li><span class="weather-summary-data" id="current-desc"></span></li>
+                    <li>High: <span class="weather-summary-data"><span id="high-temp"></span>&#176;F</span></li>
+                    <li>Humidity: <span class="weather-summary-data"><span id="current-humidity"></span>%</span></li>
+                    <li>Wind Speed: <span class="weather-summary-data"><span id="windSpeed">17</span> mph</span></li>
+                    <li>Wind Chill: <span class="weather-summary-data"><span id="windChill"></span>&#176;F</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>Five Day Forecast</h3>
+            <ul>
+                <li class="card">
+                    <h4>Monday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                    <p>41&#176;F</p>
+                </li>
+                <li class="card">
+                    <h4>Tuesday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                    <p>49&#176;F</p>
+                </li>
+                <li class="card">
+                    <h4>Wednesday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                    <p>53&#176;F</p>
+                </li>
+                <li class="card">
+                    <h4>Thursday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                    <p>46&#176;F</p>
+                </li>
+                <li class="card">
+                    <h4>Friday</h4>
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                    <p>50&#176;F</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="article">
+            <h3>Southeast Idaho School District Issues Mask Mandate</h3>
+            <p>In an effort to maintain in-class instruction in spite of the increased numbers of COVID-19 that have been confirmed in Franklin County, the Preston School District has adopted new, temporary regulations, said superintendent Marc Gee.</p>
+            <p>The following adjustments have been made following input from county commissioners, Franklin County Medical Center, Southeast Idaho Public Health, and parents.</p>
+            <a href="https://www.idahostatejournal.com/news/local/southeast-idaho-school-district-issues-mask-mandate/article_6aff0811-697d-53ed-b42f-6ce3f99a073c.html">Read More</a>
+        </section>
+
+        <section class="contact-info">
+            <img srcset="images/preston/preston-map-416.jpg 416w, images/preston/preston-map-900.jpg 900w, images/preston/preston-map-1100.jpg 1100w" sizes="(max-width: 639px) 416px, (max-width: 1249px) 900px, 1100px" src="images/preston/preston-map-1100.JPG" alt="Map of Preston" class="card">
+            <div>
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>555-555-5555</li>
+                    <li>idecweathers@email.com</li>
+                </ul>
+            </div>
+            
+        </section>   
+    </main>
+
+    <!-- Footer down here, stays mainly the same with each assignment -->
+    <footer>
+        <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California | <a
+                href=" https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+        <p>Weather updates from <a href="https://openweathermap.org">Open Weather Map</a></p>
+        <p>Last Updated: <span id="update-date"></span></p>
+        <a href="../index.html">Return to Home Portal</a> 
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Epilogue','Crete Round']
+            }
+        });
+    </script>
+</body>
+
+</html>
