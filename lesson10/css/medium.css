@@ -26,11 +26,11 @@
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     h4 {
@@ -85,7 +85,7 @@
         position: absolute;
         background-color: rgba(247, 146, 86, 0.8);
         text-align: left;
-        left: 11em;
+        left: 12em;
     }
 
     .weather-summary-data {
@@ -114,6 +114,11 @@
     .forecast ul li i {
         color: #F79256;
         display: block;
+    }
+
+    .article img {
+        float: left;
+        margin: 1.2em;
     }
 
     .contact-info {

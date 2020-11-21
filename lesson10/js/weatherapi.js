@@ -31,4 +31,38 @@ fetch(forecastAPI)
     .then((response) => response.json())
     .then((jsonObject) => {
         console.log(jsonObject);
+
+        const forecast = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+        console.log(forecast);
+
+        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        for(let i = 0; i < forecast.length; i++) {
+            //create a bunch of variables to store data
+            const foreDate = new Date(forecast[i].dt_txt);
+            let iconSrc = 'https://openweathermap.org/img/w/' + forecast[i].weather[0].icon + '.png';
+            let desc = forecast[i].weather[0].description;
+            let forecastCard = document.createElement('li');
+            let weekday = document.createElement('h3');
+            let forecastIcon = document.createElement('img');
+            let forecastTemp = document.createElement('p');
+
+            //store text/content in the elements
+            weekday.textContent = weekdays[foreDate.getDay()];
+            forecastIcon.setAttribute('src', iconSrc);
+            forecastIcon.setAttribute('alt', desc);
+            forecastIcon.style.width = '4.4em';
+            forecastTemp.textContent = forecast[i].main.temp;
+
+            //append elements to li item
+            forecastCard.appendChild(weekday);
+            forecastCard.appendChild(forecastIcon);
+            forecastCard.appendChild(forecastTemp);
+            forecastCard.classList.add("card");
+
+            document.getElementById('fiveForecast').appendChild(forecastCard);
+
+            /*
+            document.getElementById('weekday${i+1}').textContent = weekdays[foreDate.getDay()];
+            document.getElementById('foreIcon${i+1}').textContent = forecast[i].weather.*/
+        }
     });
