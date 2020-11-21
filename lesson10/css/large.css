@@ -37,6 +37,10 @@
         width: 30%;
     }
 
+    .weather-summary {
+        left: 8em;
+    }
+
     .forecast ul li {
         margin: 0.5em 2em;
     }
