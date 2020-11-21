@@ -51,7 +51,7 @@ fetch(forecastAPI)
             forecastIcon.setAttribute('src', iconSrc);
             forecastIcon.setAttribute('alt', desc);
             forecastIcon.style.width = '4.4em';
-            forecastTemp.textContent = forecast[i].main.temp;
+            forecastTemp.innerHTML = forecast[i].main.temp + '&#176;F';
 
             //append elements to li item
             forecastCard.appendChild(weekday);
