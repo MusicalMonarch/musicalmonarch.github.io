@@ -156,6 +156,10 @@ footer a {
     display: none;
 }
 
+.article img {
+    width: 90%;
+}
+
 .contact-info {
     padding: 1em 1.5em;
     background-color: rgb(228, 228, 228);

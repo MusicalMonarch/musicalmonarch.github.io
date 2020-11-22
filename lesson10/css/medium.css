@@ -119,6 +119,7 @@
     .article img {
         float: left;
         margin: 1.2em;
+        width: 45%;
     }
 
     .contact-info {
