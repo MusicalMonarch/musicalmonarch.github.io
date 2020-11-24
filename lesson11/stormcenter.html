@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 8 Storm Center assignment">
+    <title>Storm Center</title>
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Epilogue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/weathersideicon.svg" alt="my picture">
+        <div>
+            <h1>iDec Weather</h1>
+            <p class="slogan"><i>Punch that weather right in the face.</i></p>
+        </div>      
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>    
+        <h2>Storm Center</h2>
+        
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="user-info">Full Name* <input type="text" name="fullName" pattern="[A-Za-z, ]+" minlength="5" required></label>
+                <label class="user-info">Email <input type="text" name="email" placeholder="thisisafakename@email.com"></label>
+                <label class="user-info">Phone Number* <input type="tel" name="phoneNum" required></label>
+                <label class="user-info">Zip Code* <input type="number" name="zipCode" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tell Us 'Bout that Storm</legend>
+                <label class="storm-deets">Storm Date <input type="date" name="stormDate"></label>
+                <label class="storm-deets">Storm Type <input list="storm-types" name="stormType" id="storm-choice"></label>
+
+                <datalist id="storm-types">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail">Hail</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Tornado">Tornado</option>
+                </datalist>
+
+                <label class="storm-deets">Storm Severity: <span id="severityVal"><b>5</b></span><input type="range" name="severity" min="0" max="10" onchange="updateTextInput(this.value);"></label>
+                <label class="storm-deets">Storm Region
+                    <select name="stormRegion">
+                        <option value="" selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSpring">Soda Spring</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <div>In-Danger Level</div>
+                <label class="danger-level"><input type="radio" name="dangerLevel" value="yes"> Yes</label>
+                <label class="danger-level"><input type="radio" name="dangerLevel" value="maybe"> Maybe</label>
+                <label class="danger-level"><input type="radio" name="dangerLevel" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Some Extra Stuff</legend>
+                <label class="user-info">Additional Information or Comments <textarea name="extraInfo" id="extra-info" cols="30" rows="5"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Send My Storm Details" class="submitBtn">
+        </form>
+    </main>
+
+    <!-- Footer down here, stays mainly the same with each assignment -->
+    <footer>
+        <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California | <a
+                href=" https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+        <p>Last Updated: <span id="update-date"></span></p>
+        <a href="../index.html">Return to Home Portal</a> 
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="https://kit.fontawesome.com/9d873b5877.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Epilogue','Crete Round']
+            }
+        });
+    </script>
+</body>
+
+</html>

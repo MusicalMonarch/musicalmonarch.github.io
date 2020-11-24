@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 8 Storm Center assignment">
+    <title>Storm Center</title>
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Epilogue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/weathersideicon.svg" alt="my picture">
+        <div>
+            <h1>iDec Weather</h1>
+            <p class="slogan"><i>Punch that weather right in the face.</i></p>
+        </div>      
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>    
+        <h2>Thank you for sending us your message!</h2>
+        <p>We'll get back to you as soon as possible. We promise!</p>
+    </main>
+
+    <!-- Footer down here, stays mainly the same with each assignment -->
+    <footer>
+        <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California | <a
+                href=" https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+        <p>Last Updated: <span id="update-date"></span></p>
+        <a href="../index.html">Return to Home Portal</a> 
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/9d873b5877.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Epilogue','Crete Round']
+            }
+        });
+    </script>
+</body>
+
+</html>
