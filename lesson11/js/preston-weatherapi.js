@@ -11,7 +11,7 @@ fetch(apiURL)
         let weatherDesc = description.charAt(0).toUpperCase() + description.slice(1);
         
         document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp);
-        document.getElementById('current-desc').textContent = Math.round(weatherDesc);
+        document.getElementById('current-desc').textContent = weatherDesc;
         document.getElementById('high-temp').textContent = Math.round(jsObject.main.temp_max);
         document.getElementById('current-humidity').textContent = Math.round(jsObject.main.humidity);
         document.getElementById('windSpeed').textContent = Math.round(jsObject.wind.speed);
