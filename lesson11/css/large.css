@@ -50,6 +50,37 @@
         width: 50%;
     }
 
+    /* Home */
+
+    .home-welcome {
+        padding: 2em;
+        background-color: rgb(228, 228, 228);
+        box-shadow: 5px 5px 3px #481620;
+        border-radius: 10px;
+        position: absolute;
+        top: 7em;
+        left: 7em;
+    }
+
+    .town-cards section {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .town-cards section:nth-child(1) {
+        order: 3;
+    }
+
+    .town-cards section:nth-child(2) {
+        order: 1;
+    }
+
+    .town-cards section:nth-child(3) {
+        order: 2;
+    }
+
     /* Weather Gallery */
 
     figure:hover {

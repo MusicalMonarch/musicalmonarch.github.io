@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for week 9 lesson">
+    <meta name="description" content="Home page of iDec Weather">
     <title>iDec Weather | Home</title>
 
     <link rel="stylesheet" href="../assets/css/normalize.css">
@@ -16,10 +16,6 @@
 </head>
 
 <body>
-    <div id="announcement-alert">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-    </div>
-
     <header>
         <img src="images/weathersideicon.svg" alt="my picture">
         <div>
@@ -33,26 +29,36 @@
         <ul id="primaryNav" class="hide">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
-        
         <section class="hero">
-            <h2>Welcome to the iDec Weather Website!</h2>
-            <p>You tired of the weather messing with your day? We are too.</p>
+            <picture>
+                <source media="(max-width: 639px)" srcset="images/home/homehero-350.jpg">
+                <source media="(min-width: 640px) and (max-width: 1249px)" srcset="images/home/homehero-640.jpg">
+                <source media="(min-width: 1250px)" srcset="images/home/homehero-1245.jpg">
+                <img src="images/home/homehero-1245.jpg" alt="WDD 230 home hero image">
+            </picture>
+            <div class="home-welcome">
+                <h2>Welcome to the iDec Weather Website!</h2>
+                <p>You tired of the weather messing with your day? We are too.</p>
+            </div>
         </section>
 
         <div class="town-cards"></div>
         
         <section class="article">
-            <h3>Fun Article Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed viverra tellus in hac habitasse platea. Ornare massa eget egestas purus. Sodales ut eu sem integer vitae justo eget magna. Cursus mattis molestie a iaculis at. Placerat in egestas erat imperdiet sed euismod nisi porta. Nulla facilisi morbi tempus iaculis urna id volutpat lacus. Fringilla ut morbi tincidunt augue interdum velit. Pretium fusce id velit ut tortor pretium viverra suspendisse. Ultrices vitae auctor eu augue ut. Risus commodo viverra maecenas accumsan lacus vel. Maecenas pharetra convallis posuere morbi. Suspendisse in est ante in nibh mauris cursus mattis. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Pellentesque dignissim enim sit amet. Sed blandit libero volutpat sed cras. Aliquam vestibulum morbi blandit cursus risus at.</p>
-            <p>Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo integer malesuada nunc vel. Gravida arcu ac tortor dignissim convallis. Tincidunt vitae semper quis lectus nulla at volutpat. Diam in arcu cursus euismod. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Non blandit massa enim nec dui. Volutpat maecenas volutpat blandit aliquam. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Vitae tortor condimentum lacinia quis vel eros. Augue neque gravida in fermentum. Eget lorem dolor sed viverra.</p>
+            <h3>Developing Town: Traversing the 'Riverbottoms'</h3>
+            <p>As the population of the community of Bridgeport moved away that area, part of the Mendenhall and Frew family ranches, become referred to as “The Riverbottoms.” The Bridgeport Branch of the Church of Jesus Christ of Latter-day Saints faded away and those homes north of the state road (HWY 36) were included in the Dayton Ward, while those south of the road joined the Weston Ward. “The Frew family gave the ground for the present Highway 36 to the State of Idaho.”</p>
+            <p>Around 1890 the bridge crossing Bear River on the highway was constructed. A road wound its way back and forth up the eastern hillside to Preston. The old bridge failed about 1952 when there was a Greyhound Bus accident. Due to this a new bridge was installed about 400 yards to the left, and a much straighter road was engineered to climb the hill.</p>
+            <p>In the meantime two more bridges crossed the Bear. One was known as the Deep Creek Bridge, the other, to the south was the Weston Bridge. There were also regularly used fording places, available when the water was low in the river. Drivers had to be careful using the fords due to the possibilities of quicksand and also of dropping off into a deeper hole on either side of the traveled crossings.</p>
+            <p>The Riverbottoms stretched on both sides of the Bear River as it wound its way through the county. At the southern end it was five or six miles west of the bustling town of Franklin, then reached to the north to Battle Creek and the lower end of the Riverdale community. There was another bridge across the Bear River constructed during the hey days of Battle Creek when it was the terminus for the Utah Northern Railroad as it was extending its way to the northwest. The locals simply called it the Railroad Bridge but when the boomtown dwindled it was used as one more way to cross the river barrier across the wide valley of the county.</p>
+            <a target="#" href="https://www.hjnews.com/preston/developing-town-traversing-the-riverbottoms/article_1e124f84-483e-57f2-9a23-e535e150ef95.html">Read More</a>
         </section>
 
         <section class="contact-info">

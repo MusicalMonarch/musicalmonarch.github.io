@@ -1,6 +1,6 @@
 
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=60956a22cb37b327668dedafe1faaa3b&units=imperial"
-const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=60956a22cb37b327668dedafe1faaa3b&units=imperial"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=60956a22cb37b327668dedafe1faaa3b&units=imperial"
+const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=60956a22cb37b327668dedafe1faaa3b&units=imperial"
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -10,11 +10,11 @@ fetch(apiURL)
         let description = jsObject.weather[0].description;
         let weatherDesc = description.charAt(0).toUpperCase() + description.slice(1);
         
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
-        document.getElementById('current-desc').textContent = weatherDesc;
-        document.getElementById('high-temp').textContent = jsObject.main.temp_max;
-        document.getElementById('current-humidity').textContent = jsObject.main.humidity;
-        document.getElementById('windSpeed').textContent = jsObject.wind.speed;
+        document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp);
+        document.getElementById('current-desc').textContent = Math.round(weatherDesc);
+        document.getElementById('high-temp').textContent = Math.round(jsObject.main.temp_max);
+        document.getElementById('current-humidity').textContent = Math.round(jsObject.main.humidity);
+        document.getElementById('windSpeed').textContent = Math.round(jsObject.wind.speed);
 
         //calculates wind chill
         function calcWindChill(temperature, speed) {
@@ -51,7 +51,7 @@ fetch(forecastAPI)
             forecastIcon.setAttribute('src', iconSrc);
             forecastIcon.setAttribute('alt', desc);
             forecastIcon.style.width = '4.4em';
-            forecastTemp.innerHTML = forecast[i].main.temp + '&#176;F';
+            forecastTemp.innerHTML = Math.round(forecast[i].main.temp) + '&#176;F';
 
             //append elements to li item
             forecastCard.appendChild(weekday);

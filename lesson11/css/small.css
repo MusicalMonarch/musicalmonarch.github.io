@@ -306,6 +306,22 @@ form input.submitBtn:hover {
 .town-cards section {
     background-color: rgb(228, 228, 228);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.town-cards section:nth-child(1) {
+    order: 3;
+}
+
+.town-cards section:nth-child(2) {
+    order: 1;
+}
+
+.town-cards section:nth-child(3) {
+    order: 2;
 }
 
 .town-cards section img {
