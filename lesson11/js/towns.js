@@ -40,8 +40,9 @@ fetch(requestURL).then(function (response) {
                 townInfo.appendChild(annualRainfall);
                 card.appendChild(townInfo);
                 card.appendChild(img);
+                card.classList.add('card');
                 //append the card sections into the div
-                document.querySelector("div.town-cards").appendChild(card);
+                document.querySelector('div.town-cards').appendChild(card);
             }
         }
     } else {

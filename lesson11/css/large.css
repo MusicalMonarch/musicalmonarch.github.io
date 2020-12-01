@@ -62,6 +62,10 @@
         left: 7em;
     }
 
+    .town-cards {
+        display: flex;
+    }
+
     .town-cards section {
         display: flex;
         grid-template-columns: repeat(2, 1fr);
@@ -141,12 +145,6 @@
     }
 
     /* Home page grid */
-
-    .town-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    }
 
     .town-cards section {
         display: block;
