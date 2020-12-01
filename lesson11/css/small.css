@@ -311,7 +311,7 @@ form input.submitBtn:hover {
 
 .town-cards {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
 }
