@@ -9,7 +9,7 @@ body {
 
 header, footer {
     margin: 0 auto;
-    background-color: #F79256;
+    background-color: #D1D1D1;
 }
 
 header {
@@ -30,7 +30,7 @@ header p {
 
 h1, h2, h3, h4, form legend {
     font-family: 'Crete Round', serif;
-    color: #481620;
+    color: #29467F;
     margin: 0;
 }
 
@@ -46,7 +46,7 @@ h3 {
 nav {
     margin: 0 auto;
     text-align: center;
-    background-color: #481620;
+    background-color: #29467F;
     padding: 12px 0;
 }
 
@@ -54,7 +54,7 @@ nav button {
     margin: .2em 2%;
     background-color: transparent;
     border: 1px solid rgba(274,146,86,1);
-    color: #F79256;
+    color: #D1D1D1;
     border-radius: 3px;
 }
 
@@ -65,13 +65,13 @@ nav ul.hide {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: #F78256;
+    color: #D1D1D1;
     padding: 15px;
 }
 
 nav ul li a:hover {
-    background-color: #FAF33E;
-    color: #481620;
+    background-color: #E6FF8A;
+    color: #29467F;
 }
 
 nav ul li.active a {
@@ -98,11 +98,11 @@ section {
 
 a {
     text-decoration: none;
-    color: #F79256;
+    color: #29467F;
 }
 
 a:hover {
-    color: #FAF33E;
+    color: #E6FF8A;
 }
 
 footer {
@@ -111,11 +111,11 @@ footer {
 }
 
 footer a {
-    color: #481620;
+    color: #29467F;
 }
 
 .slogan {
-    color: #481620;
+    color: #29467F;
     font-weight: 600;
 }
 
@@ -142,14 +142,19 @@ footer a {
 }
 
 .weather-summary {
-    background-color: rgb(228, 228, 228);
+    background-color:#131416;
+    color: #D1D1D1;
     padding: 1.2em;
     top: 1em;
     left: 4.5em;
 }
 
+.weather-summary h3 {
+    color: #E6FF8A;
+}
+
 .weather-summary-data {
-    color: #F79256;
+    color: #E6FF8A;
 }
 
 .forecast {
@@ -169,7 +174,7 @@ footer a {
 .contact-info {
     padding: 1em 1.5em;
     background-color: rgb(228, 228, 228);
-    color: #481620;
+    color: #29467F;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,14 +195,14 @@ footer a {
 }
 
 .card {
-    box-shadow: 5px 5px 3px #481620;
+    box-shadow: 5px 5px 3px #131416;
     border-radius: 10px;
 }
 
 #announcement-alert {
     display: none;
-    background-color: #FAF33E;
-    color: #481620;
+    background-color: #E6FF8A;
+    color: #29467F;
     padding: 1.5em;
 }
 
@@ -244,7 +249,7 @@ form {
 
 form fieldset {
     margin: 2rem 0;
-    border: 1-x solid #481620;
+    border: 1-x solid #29467F;
     border-radius: 10px;
     padding: 1.2rem 2%;
 }
@@ -283,7 +288,7 @@ form label.danger-level {
 }
 
 form label.user-info input:required {
-    border-left: #481620 solid 6px;
+    border-left: #29467F solid 6px;
 }
 
 form label.user-info input:required:valid {
@@ -292,19 +297,19 @@ form label.user-info input:required:valid {
 
 form input.submitBtn {
     border: none;
-    background-color: #F78256;
-    color: #481620;
+    background-color: #D1D1D1;
+    color: #29467F;
     border-radius: 1rem;
     padding: .8rem 1.5rem;
     width: 95%;
 }
 
 form input.submitBtn:hover {
-    background-color: #FAF33E;
+    background-color: #E6FF8A;
 }
 
 #severityVal {
-    color: #F78256;
+    color: #29467F;
 }
 
 /* Home page */

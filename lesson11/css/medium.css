@@ -83,13 +83,13 @@
 
     .weather-summary {
         position: absolute;
-        background-color: rgba(247, 146, 86, 0.8);
+        background-color: #29467F;
         text-align: left;
         left: 12em;
     }
 
     .weather-summary-data {
-        color: #FAF33E;
+        color: E6FF8A;
     }
 
     .forecast {
@@ -112,7 +112,7 @@
     }
 
     .forecast ul li i {
-        color: #F79256;
+        color: #B43608;
         display: block;
     }
 
