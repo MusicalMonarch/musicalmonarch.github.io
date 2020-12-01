@@ -45,7 +45,6 @@ fetch(requestURL).then(function (response) {
             }
         }
     } else {
-        console.log(jsonObject);
         if (document.getElementsByTagName('li')[1].classList.contains('active')) {
             var activeTown = 5;
         } else if (document.getElementsByTagName('li')[2].classList.contains('active')) {
