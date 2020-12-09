@@ -1,0 +1,17 @@
+
+@media only screen and (min-width: 40.5em) {
+    
+    nav ul{
+        display: flex;
+        flex: 1 1 100%;
+    }
+    
+    nav ul.hide {
+        display: block;
+    }
+
+    nav button {
+        display: none;
+    }
+    
+}

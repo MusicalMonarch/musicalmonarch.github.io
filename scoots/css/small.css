@@ -1,3 +1,61 @@
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbf6f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffa45b;
+    font-family: 'Lemon', cursive;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 80px repeat(2, 1fr);
+    padding: 2em 1em;
+}
+
 header img {
-    width: 5.5%;
+    margin: 0;
+    max-width: 3.5em;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: end;
+}
+
+header div {
+    text-align: left;
+    grid-column: 2/3;
+    justify-self: start;
+}
+
+header div p {
+    margin: 0;
+}
+
+nav {
+    grid-column: 3/5;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.hero img{
+    width: 80%;
 }
