@@ -1,6 +1,54 @@
 
 @media only screen and (min-width: 1250px) {
 
-    body {}
+    body {
+        font-size: 1.1em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    header {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 80px repeat(2, 1fr) 80px;
+    }
+
+    header img {
+        grid-column: 1/2;
+        max-width: 3em;
+        align-self: center;
+        justify-self: end;
+    }
+
+    header div {
+        text-align: left;
+        grid-column: 2/3;
+        justify-self: start;
+    }
+
+    header nav {
+        grid-column: 3/5;
+        align-self: center;
+    }
+
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0.5em 1em;
+    }
+
+    nav ul li a {
+        display: inline;
+        padding: 0.8em;
+    }
+
+    nav button {
+        display: none;
+    }
     
 }

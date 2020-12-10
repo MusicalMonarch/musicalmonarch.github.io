@@ -2,6 +2,7 @@
 body {
     margin: 0 auto;
     text-align: center;
+    font-size: 0.8em;
     font-family: 'Poppins', sans-serif;
     background-color: #fbf6f0;
 }
@@ -12,29 +13,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 2.2em;
     margin: 0;
 }
 
 header {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 80px repeat(2, 1fr);
-    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3em 1em;
 }
 
 header img {
-    margin: 0;
-    max-width: 3.5em;
-    grid-column: 1/2;
-    align-self: center;
-    justify-self: end;
-}
-
-header div {
-    text-align: left;
-    grid-column: 2/3;
-    justify-self: start;
+    margin: 0 auto;
+    max-width: 2.5em;
 }
 
 header div p {
@@ -42,11 +33,34 @@ header div p {
 }
 
 nav {
-    grid-column: 3/5;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px 0;
 }
 
 nav ul.hide {
     display: none;
+}
+
+nav ul li {
+    margin: 0.5em 0;
+}
+
+nav ul li.active a {
+    background-color: #ffda77;
+    color: #ffa45b;
+}
+
+nav ul li a {
+    display: block;
+    background-color: transparent;
+}
+
+nav button {
+    margin: .2em 2%;
+    border: 1px solid #ffa45b;
+    color: #ffa45b;
+    border-radius: 3px;
 }
 
 ul {
@@ -55,7 +69,29 @@ ul {
     margin: 0;
 }
 
+a {
+    color: #ffa45b;
+    text-decoration: none;
+    padding: 15px;
+    margin: 1.2em 0;
+    background-color: #ffda77;
+    border-radius: 50px;
+}
+
+a:hover {
+    background-color: #ffa45b;
+    color: #fbf6f0;
+}
+
+section {
+    margin-bottom: 1em;
+    padding: 2% 0;
+}
 
 .hero img{
-    width: 80%;
+    width: 100%;
+}
+
+.hero-message {
+    padding: 2%;
 }

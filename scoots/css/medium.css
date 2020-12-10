@@ -1,17 +1,21 @@
 
 @media only screen and (min-width: 40.5em) {
     
-    nav ul{
-        display: flex;
-        flex: 1 1 100%;
+    body {
+        font-size: 1em;
     }
     
-    nav ul.hide {
-        display: block;
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    header img {
+        max-width: 3em;
     }
 
-    nav button {
-        display: none;
+    main {
+        margin: 0 auto;
+        width: 72%;
     }
     
 }
