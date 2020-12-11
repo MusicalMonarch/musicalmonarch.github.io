@@ -1,15 +1,12 @@
 
-/*function readJSON(path) {
-    var getJson = new XMLHttpRequest();
-    getJson.open('GET', path, true);
-    getJson.responseType = 'blob';
-    getJson.onload = function(e) {
-        if(this.status == 200) {
-            var file = new File([this.response], 'temp');
-            var fileReader = new FileReader();
-            fileReader.addEventListener('load', function(){
+//store URL in a const
+const requestURL = "https://musicalmonarch.github.io/scoots/data/rentals.json"
 
-            })
-        }
-    }
-}*/
+//fetch request for the json object
+fetch(requestURL).then(function (response) {
+    return response.json();
+}).then(function (jsonObject) {
+    //create a variable for the jsonObject
+    const rentals = jsonObject["rentalTypes"];
+    console.log(rentals);
+})
