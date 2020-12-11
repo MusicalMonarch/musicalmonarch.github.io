@@ -54,11 +54,17 @@ nav ul li.active a {
 nav ul li a {
     display: block;
     background-color: transparent;
+    text-decoration: none;
+    padding: 15px;
+    margin: 1.2em 0;
+    border-radius: 50px;
+    color: #ffa45b;
 }
 
 nav button {
     margin: .2em 2%;
-    border: 1px solid #ffa45b;
+    border: none;
+    background-color: transparent;
     color: #ffa45b;
     border-radius: 3px;
 }
@@ -69,7 +75,7 @@ ul {
     margin: 0;
 }
 
-a {
+.hero-message a {
     color: #ffa45b;
     text-decoration: none;
     padding: 15px;
@@ -81,6 +87,14 @@ a {
 a:hover {
     background-color: #ffa45b;
     color: #fbf6f0;
+}
+
+i {
+    color: #ffa45b;
+}
+
+i:hover {
+    color: #aee6e6;
 }
 
 section {
@@ -98,4 +112,8 @@ section {
 
 .hero-message p:nth-of-type(2) {
     margin: 2em 0;
+}
+
+#rentals-ex {
+    display: flex;
 }
