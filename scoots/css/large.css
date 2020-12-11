@@ -31,6 +31,7 @@
     header nav {
         grid-column: 3/5;
         align-self: center;
+        justify-self: start;
     }
 
     nav ul.hide {
@@ -50,5 +51,12 @@
     nav button {
         display: none;
     }
-    
+
+    .hero-message {
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+    }
+
 }

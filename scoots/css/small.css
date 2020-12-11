@@ -85,7 +85,7 @@ a:hover {
 
 section {
     margin-bottom: 1em;
-    padding: 2% 0;
+    padding: 0.3em 0;
 }
 
 .hero img{
@@ -94,4 +94,8 @@ section {
 
 .hero-message {
     padding: 2%;
+}
+
+.hero-message p:nth-of-type(2) {
+    margin: 2em 0;
 }

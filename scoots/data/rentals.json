@@ -1,4 +1,4 @@
-{
+data = {
     "rentalTypes": [
         {
             "name": "~Honda Metro Scooter",
@@ -7,7 +7,7 @@
             "fullDayRes": 30,
             "halfDayWalk": 25,
             "fullDayWalk": 35,
-            //"imageurl": 
+            "imageurl": "images/hondametro.jpg"
         },
         {
             "name": "~Honda Dio Scooter",
@@ -16,7 +16,7 @@
             "fullDayRes": 40,
             "halfDayWalk": 35,
             "fullDayWalk": 45,
-            //"imageurl": 
+            "imageurl": "images/hondadio.jpg"
         },
         {
             "name": "~Honda PCX150 Scooter",
@@ -25,7 +25,7 @@
             "fullDayRes": 50,
             "halfDayWalk": 45,
             "fullDayWalk": 55,
-            //"imageurl": 
+            "imageurl": "images/hondapcx.jpg"
         },
         {
             "name": "~Honda Pioneer ATV",
@@ -34,7 +34,7 @@
             "fullDayRes": 70,
             "halfDayWalk": 60,
             "fullDayWalk": 80,
-            //"imageurl": 
+            "imageurl": "images/hondapioneer.jpg"
         },
         {
             "name": "Jeep Wrangler - 4 door with a/c",
@@ -43,7 +43,7 @@
             "fullDayRes": 100,
             "halfDayWalk": 85,
             "fullDayWalk": 125,
-            //"imageurl": 
+            "imageurl": "images/jeep4door.jpg"
         },
         {
             "name": "Jeep Wrangler",
@@ -52,7 +52,7 @@
             "fullDayRes": 85,
             "halfDayWalk": 70,
             "fullDayWalk": 90,
-            //"imageurl": 
+            "imageurl": "images/jeepwrangler.jpg"
         }
     ]
 }

@@ -17,5 +17,22 @@
         margin: 0 auto;
         width: 72%;
     }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        position: relative;
+    }
+
+    .hero-message {
+        position: absolute;
+        background-color: #fbf6f0;
+        left: 50%;
+        top: 20%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+    }
     
 }
