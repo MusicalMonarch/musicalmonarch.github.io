@@ -4,17 +4,9 @@
     body {
         font-size: 1em;
     }
-
-    img {
-        width: 40%;
-    }
     
     h1 {
         font-size: 2.5em;
-    }
-    
-    header img {
-        max-width: 3em;
     }
 
     main {
@@ -41,6 +33,20 @@
 
     /* Home Page */
 
+    .forecast div:nth-child(2) {
+        display: block;
+    }
+
+    .forecast div:nth-child(2) ul {
+        margin: 2em auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .forecast div:nth-child(2) ul li {
+        margin: 0 auto;
+    }
+
     #explore-cozumel {
         display: flex;
         flex-direction: column;
@@ -57,6 +63,14 @@
     #rentals-ex {
         display: flex;
         flex-direction: column;
+    }
+
+    #rentals-ex div {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        margin: 2em auto;
     }
 
     #rentals-ex div:nth-child(odd) img {

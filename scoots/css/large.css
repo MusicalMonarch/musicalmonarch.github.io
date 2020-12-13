@@ -5,10 +5,6 @@
         font-size: 1.1em;
     }
 
-    img {
-        width: 30%;
-    }
-
     h1 {
         font-size: 4em;
     }
@@ -21,7 +17,6 @@
 
     header img {
         grid-column: 1/2;
-        max-width: 3em;
         align-self: center;
         justify-self: end;
     }
