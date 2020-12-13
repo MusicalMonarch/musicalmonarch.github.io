@@ -41,7 +41,9 @@ function getForecast(weatherAPI, forecastAPI) {
     fetch(forecastAPI)
         .then((response) => response.json())
         .then((jsonObject) => {
+            console.log(jsonObject);
             const forecast = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+            console.log(forecast);
 
             const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
             for(let i = 0; i < forecast.length; i++) {

@@ -47,36 +47,70 @@
     </section>
     
     <main>
+        <section class="forecast">
+            <div class="current-weather">
+                <h2>Right now it's...</h2>
+                <ul>
+                    <li><span id="current-temp"></span>&#176;F</li>
+                    <li>Currently <span id="weather-desc"></span></li>
+                    <li>Humidity: <span id="current-humid"></span>%</li>
+                </ul>
+            </div>
+            <div>
+                <h2>For the next three days...</h2>
+                <ul id="threeForecast"></ul>
+            </div>
+        </section>
+
         <section id="explore-cozumel">
             <h2>Explore the coast!</h2>
-            <img src="images/home/cozumel1.jpg" alt="picture of cozumel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet commodo nulla facilisi nullam vehicula ipsum a.</p>
-
-            <img src="images/home/cozumel2.jpg" alt="picture of cozumel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet commodo nulla facilisi nullam vehicula ipsum a.</p>
+            <div>
+               <img src="images/home/cozumel1.jpg" alt="picture of cozumel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet commodo nulla facilisi nullam vehicula ipsum a.</p>
+            </div>
+            <div>
+                <img src="images/home/cozumel2.jpg" alt="picture of cozumel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet commodo nulla facilisi nullam vehicula ipsum a.</p>
+            </div>
         </section>
 
-        <section id="rentals-ex">
+        <section>
             <h2>Check what we've got.</h2>
+            <div id="rentals-ex"></div>
         </section>
-
-        <div class="forecards"></div>
 
         <section class="locations">
             <h2>Here's where we are.</h2>
+            <div>
+                <img src="images/home/scootslocation1.jpg" alt="Map for Playa del Carmen Scoots">
+                <h3>Playa del Carmen-Cozumel Ferry Dock, el Centro</h3>
+                <p>(555)555-5555</p>
+                <p>playaScoots@email.com</p>
+            </div>
+            <div>
+                <img src="images/home/scootslocation2.jpg" alt="Map for Terminal Puerta Maya Scoots">
+                <h3>Terminal Puerta Maya, Cozumel</h3>
+                <p>(555)555-5555</p>
+                <p>terminalScoots@email.com</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California</p>
-        <p>Last Updated: <span id="update-date"></span></p>
+        <div>
+            <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California</p>
+            <p>Last Updated: <span id="update-date"></span></p>
+        </div>
 
-        <a href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-square"></i></a>
-        <a href="www.twitter.com"><i class="fab fa-3x fa-twitter"></i></a>
-        <a href="https://www.instagram.com"><i class="fab fa-3x fa-instagram"></i></a>
+        <div>
+            <a target="_blank" href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-square"></i></a>
+            <a target="_blank" href="www.twitter.com"><i class="fab fa-3x fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com"><i class="fab fa-3x fa-instagram"></i></a>
+        </div>
     </footer>
 
     <script src="js/basics.js"></script>
+    <script src="js/forecast.js"></script>
     <script src="js/rentalex.js"></script>
     <script src="https://kit.fontawesome.com/9d873b5877.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

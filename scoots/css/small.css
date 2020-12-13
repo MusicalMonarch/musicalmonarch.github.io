@@ -8,16 +8,20 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #ffa45b;
+    color: #00571A;
     font-family: 'Lemon', cursive;
+    margin: 0;
 }
 
 h1 {
     font-size: 2.2em;
-    margin: 0;
 }
 
-header {
+h3 {
+    color: #00515C;
+}
+
+header, footer {
     display: flex;
     flex-direction: column;
     padding: 1.3em 1em;
@@ -47,25 +51,20 @@ nav ul li {
 }
 
 nav ul li.active a {
-    background-color: #ffda77;
-    color: #ffa45b;
+    background-color: #AEE6E6;
+    color: #00571A;
 }
 
 nav ul li a {
     display: block;
     background-color: transparent;
-    text-decoration: none;
-    padding: 15px;
-    margin: 1.2em 0;
-    border-radius: 50px;
-    color: #ffa45b;
 }
 
 nav button {
     margin: .2em 2%;
     border: none;
     background-color: transparent;
-    color: #ffa45b;
+    color: #00571A;
     border-radius: 3px;
 }
 
@@ -75,31 +74,27 @@ ul {
     margin: 0;
 }
 
-.hero-message a {
-    color: #ffa45b;
+a {
+    color: #00571A;
     text-decoration: none;
     padding: 15px;
     margin: 1.2em 0;
-    background-color: #ffda77;
+    background-color: #AEE6E6;
     border-radius: 50px;
 }
 
 a:hover {
-    background-color: #ffa45b;
+    background-color: #00571A;
     color: #fbf6f0;
-}
-
-i {
-    color: #ffa45b;
-}
-
-i:hover {
-    color: #aee6e6;
 }
 
 section {
     margin-bottom: 1em;
     padding: 0.3em 0;
+}
+
+div {
+    margin-top: 1.2em;
 }
 
 .hero img{
@@ -114,6 +109,34 @@ section {
     margin: 2em 0;
 }
 
-#rentals-ex {
-    display: flex;
+footer {
+    color: #00515C;
+}
+
+footer div:nth-child(1) {
+    justify-self: start;
+}
+
+footer div:nth-child(2) {
+    justify-self: end;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a, nav button {
+    color: #00571A;
+    background-color: transparent;
+}
+
+footer a:hover, nav button:hover {
+    color: #AEE6E6;
+    background-color: transparent;
+}
+
+/* Home Page */
+
+#rentals-ex img {
+    width: 80%;
 }

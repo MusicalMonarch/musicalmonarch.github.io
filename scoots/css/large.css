@@ -5,6 +5,10 @@
         font-size: 1.1em;
     }
 
+    img {
+        width: 30%;
+    }
+
     h1 {
         font-size: 4em;
     }
