@@ -1,6 +1,6 @@
 
 //store URL in a const
-const requestURL = "https://musicalmonarch.github.io/scoots/data/rentals.json"
+const requestURL = "https://musicalmonarch.github.io/scoots/data/rentals.json";
 
 //fetch request for the json object
 fetch(requestURL).then(function (response) {
