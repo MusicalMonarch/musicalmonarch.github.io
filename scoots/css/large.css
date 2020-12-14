@@ -58,4 +58,10 @@
         transform: translateX(-50%);
     }
 
+    /*Home Page*/
+
+    #explore-cozumel div img {
+        width: 70%;
+    }
+
 }

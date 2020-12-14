@@ -8,6 +8,7 @@ fetch(apiURL)
         //set spans to actual data that updates
         let description = jsObject.current.weather[0].description;
         let weatherDesc = description.charAt(0).toUpperCase() + description.slice(1);
+        document.getElementById('current-icon').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.current.weather[0].icon + '.png');
         document.getElementById('weather-desc').textContent = weatherDesc;
         document.getElementById('current-temp').textContent = Math.round(jsObject.current.temp);
         document.getElementById('current-humid').textContent = jsObject.current.humidity;
