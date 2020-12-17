@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="~Scoots - a motor scooter rental service for explorers in Cozumel">
-    <title>Home | ~Scoots</title>
+    <meta name="description" content="Places to visit in Cozumel">
+    <title>Tours</title>
 
     <link rel="shortcut icon" href="scootsicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -23,7 +23,7 @@
         <nav>
             <button onclick="toggleMenu()"><i id="navBtn" class="fas fa-3x fa-angle-down"></i></button>
             <ul id="primaryNav" class="hide">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                 <li class="active"><a href="#">Tours</a></li>
@@ -40,30 +40,61 @@
             <img src="images/home/homehero-1920.jpg" alt="home hero image of Cozumel">
         </picture>
         <div class="hero-message">
-            <h2>Reserve Your Vehicle</h2>
+            <h2>If you haven't already...</h2>
             <p>Get one step ahead and reserve a vehicle now.</p>
             <p><a href="reservation.html">Reserve a vehicle</a></p>
         </div>
     </section>
 
     <main>
-        <section class="hero">
-            <picture></picture>
-            <div class="hero-message">
-                <h2>Reserve Your Vehicle</h2>
-                <p>Get one step ahead and reserve a vehicle now.</p>
-                <a href="reservation.html">Reserve a vehicle</a>
+        <h2>Not sure of where to go? Try these locations!</h2>
+        <section class="hotspot">
+            <img src="images/tours/palacio-municipal.jpg" alt="Palacio Municipal de Cozumel">
+            <div>
+                <h3>Palacio Municipal de Cozumel</h3>
+                <p>(image courtesy of Trip Advisor) One of the most important landmarks in the whole of San Miguel de Cozumel, the City Hall is known locally as the 'Palacio Municipal' and features classical Mexican architecture, complete with dome and archway. Very much central to local government, the City Hall features a number of offices dealing with the island's government business. The Palacio Municipal features modern architecture, with a white facade and tall central clock tower. (World Guides)</p>
+                <p>For more information, go <a href="https://www.tripadvisor.com/Attraction_Review-g150809-d558526-Reviews-Palacio_Municipal-Cozumel_Yucatan_Peninsula.html">here</a>.</p>
             </div>
+        </section>
+        <section class="hotspot">
+            <img src="images/tours/plaza-central.jpg" alt="Plaza de Sol">
+            <div>
+                <h3>Plaza de Sol</h3>
+                <p>(photo by Richard F. Ebert) The Plaza Central is a prominent local landmark and lies in the very heart of San Miguel de Cozumel. Very important in day to day life, much of the town is arranged around the Plaza Central, including the Cozumel Tourist Information Office and the Tourist Police Kiosk. This large public square is sited close to the cruise docks and is surrounded by a number of lively eateries, bars and shops. (World Guides)</p>
+                <p>For more information, go <a href="https://www.tripadvisor.com/Attraction_Review-g150809-d558537-Reviews-Plaza_Central-Cozumel_Yucatan_Peninsula.html">here</a>.</p>
+            </div>
+        </section>
+        <section class="hotspot">
+            <img src="images/tours/museo-cozumel.jpg" alt="Cozumel de la Isla de Cozumel">
+            <div>
+                <h3>Museo de la Isla de Cozumel</h3>
+                <p>(image courtesy of Trip Advisor) The little museum features great information about the past life of the island. Learn how the island came to be, explore ancient Mayan artifacts and gain a deeper insight into the way of the island’s inhabitants. It’s a great break from the business of the town and also offers much-needed shade from the hot sun. The museum is small enough to explore in an hour’s time. You can also enjoy some tasty treats while savoring the view of the mainland from the museum’s cafe. A $4 entrance fee is charged at this place.</p>
+                <p>For more information, go <a href="https://www.tripadvisor.com/AttractionProductReview-g150809-d13195193-Cozumel_Island_Museum-Cozumel_Yucatan_Peninsula.html">here</a>.</p>
+            </div>
+        </section>
+        <section class="recommends">
+            <h2>Adventure is out there!</h2>
+            <p>So check out these other lists of Cozumel hot spots.</p>
+            <ul>
+                <li><a href="https://www.tripadvisor.com/Attractions-g150809-Activities-Cozumel_Yucatan_Peninsula.html">Trip Advisor</a></li>
+                <li><a href="http://www.world-guides.com/north-america/mexico/quintana-roo/cozumel/cozumel_landmarks.html">World Guides on Cozumel</a></li>
+                <li><a href="https://www.cruisehive.com/things-to-do-in-cozumel-mexico-for-cruise-passengers/27224">Cruise Hive</a></li>
+                <li><a href="https://travel.usnews.com/Cozumel_Mexico/Things_To_Do/">Travel US News</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California</p>
-        <p>Last Updated: <span id="update-date"></span></p>
+        <div>
+            <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California</p>
+            <p>Last Updated: <span id="update-date"></span></p>
+        </div>
 
-        <a target="_blank" href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-square"></i></a>
-        <a target="_blank" href="www.twitter.com"><i class="fab fa-3x fa-twitter"></i></a>
-        <a target="_blank" href="https://www.instagram.com"><i class="fab fa-3x fa-instagram"></i></a>
+        <div>
+            <a target="_blank" href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-square"></i></a>
+            <a target="_blank" href="www.twitter.com"><i class="fab fa-3x fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com"><i class="fab fa-3x fa-instagram"></i></a>
+        </div>
     </footer>
 
     <script src="js/basics.js"></script>

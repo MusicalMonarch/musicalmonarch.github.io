@@ -175,5 +175,45 @@
     #all-rentals img {
         width: 30%;
     }
+
+    /* Reservation Page */
+
+    form {
+        text-align: left;
+    }
+
+    form label input, form label textarea {
+        margin: 0.8em 0 1.2em;
+    }
+
+    form input.submitBtn {
+        width: 20%;
+    }
+
+    /* Tours page */
+
+    .hotspot img {
+        width: 50%;
+    }
+
+    .hotspot:nth-child(even) {
+        flex-direction: row;
+    }
+
+    .hotspot:nth-child(even) p, .hotspot:nth-child(even) h3 {
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    .hotspot:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .hotspot:nth-child(odd) p, .hotspot:nth-child(odd) h3 {
+        justify-self: end;
+        align-self: end;
+        text-align: right;
+        margin-right: 1em;
+    }
     
 }

@@ -33,6 +33,11 @@
         justify-self: start;
     }
 
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
     nav ul.hide {
         display: flex;
         flex-direction: row;

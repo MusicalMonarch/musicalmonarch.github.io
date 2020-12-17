@@ -56,10 +56,10 @@
                 <legend>Just fill out this form!</legend>
                 <label>Reservation Date* <input type="date" name="rentDate" required></label>
                 <label>Vehicle* <input list="rent-type" name="rentType" id="rent-choice" required></label>
-                <label>Full Name* <input type="text" name="fullName" pattern="[A-Za-z]+" minlength="5"></label>
+                <label>Full Name* <input type="text" name="fullName" pattern="[A-Za-z, ]+" minlength="5" required></label>
                 <label>Phone Number* <input type="tel" name="phoneNum" required></label>
                 <label>Email <input type="text" name="email" placeholder="aFakeEmail@email.com"></label>
-                <label>Home State <input list="states-list" name="statesList" id="states-choice"></label>
+                <label>State <input list="states-list" name="statesList" id="states-choice"></label>
 
                 <datalist id="rent-type">
                     <option value="Honda Metropolitan"></option>
@@ -130,6 +130,8 @@
                 <label>Drop-off Location Request <textarea name="dropOff" id="drop-request" cols="30" rows="5"></textarea></label>
                 <label>Additional Comments or Requests <textarea name="extraInfo" id="extra-info" cols="30" rows="5"></textarea></label>
             </fieldset>
+
+            <input type="submit" value="Reserve My Vehicle" class="submitBtn">
         </form>
     </main>
 

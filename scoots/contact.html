@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="~Scoots - a motor scooter rental service for explorers in Cozumel">
-    <title>Home | ~Scoots</title>
+    <meta name="description" content="~Scoots contact page">
+    <title>~Scoots Contact</title>
 
     <link rel="shortcut icon" href="scootsicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -27,7 +27,7 @@
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                 <li><a href="tours.html">Tours</a></li>
-                <li class="active"><a href="#">Contact</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,23 +47,45 @@
     </section>
 
     <main>
-        <section class="hero">
-            <picture></picture>
-            <div class="hero-message">
-                <h2>Reserve Your Vehicle</h2>
-                <p>Get one step ahead and reserve a vehicle now.</p>
-                <a href="reservation.html">Reserve a vehicle</a>
+        <section>
+            <h2>Ask Us Anything! You know where to call.</h2>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HX0NcBxfZz28_EoHgi2Ysx79dFqIW5by" width="500" height="300"></iframe>
+            <div>
+                <h3>Playa del Carmen-Cozumel Ferry Dock, el Centro</h3>
+                <p>(555)555-5555</p>
+                <p>playaScoots@email.com</p>
+            </div>
+            <div>
+                <h3>Terminal Puerta Maya, Cozumel</h3>
+                <p>(555)555-5555</p>
+                <p>terminalScoots@email.com</p>
             </div>
         </section>
+
+        <form method="get" action="contact-valid.html">
+            <fieldset>
+                <legend>Get in touch with us</legend>
+                <label>Full Name <input type="text" name="fullName" pattern="[A-Za-z, ]+" minlength="5" required></label>
+                <label>Email <input type="text" name="email" placeholder="aFakeEmail@email.com" required></label>
+                <label>Comment <textarea name="extraInfo" id="extra-info" cols="30" rows="5" required></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Send My Message" class="submitBtn">
+        </form>
     </main>
 
     <footer>
-        <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California</p>
-        <p>Last Updated: <span id="update-date"></span></p>
+        <div>
+            <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California</p>
+            <p>Last Updated: <span id="update-date"></span></p>
+            <p>Weather Information provided by <a href="https://openweathermap.org">Open Weather Map</a>.</p>
+        </div>
 
-        <a target="_blank" href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-square"></i></a>
-        <a target="_blank" href="www.twitter.com"><i class="fab fa-3x fa-twitter"></i></a>
-        <a target="_blank" href="https://www.instagram.com"><i class="fab fa-3x fa-instagram"></i></a>
+        <div>
+            <a target="_blank" href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-square"></i></a>
+            <a target="_blank" href="www.twitter.com"><i class="fab fa-3x fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com"><i class="fab fa-3x fa-instagram"></i></a>
+        </div>
     </footer>
 
     <script src="js/basics.js"></script>

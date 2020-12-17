@@ -11,7 +11,7 @@ img {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, form legend {
     color: #00571A;
     font-family: 'Lemon', cursive;
     margin: 0.8 auto;
@@ -170,12 +170,17 @@ footer p {
     margin: 0;
 }
 
-footer a, nav button {
+footer a, nav button, .hotspot a, .recommends a {
     color: #00571A;
     background-color: transparent;
+    padding: 0;
+    display: inline;
 }
 
-footer a:hover, nav button:hover {
+footer a:hover,
+nav button:hover,
+.hotspot a:hover,
+.recommends a:hover {
     color: #AEE6E6;
     background-color: transparent;
 }
@@ -228,4 +233,70 @@ footer a:hover, nav button:hover {
 #all-rentals thead {
     background-color: #00571A;
     color: #fbf6f0;
+}
+
+/* Reservations Page */
+
+form {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+form fieldset {
+    margin: 2em 0;
+    border: 1px solid #00515C;
+    border-radius: 10px;
+    padding: 1.2em 2%;
+}
+
+form legend {
+    margin: 0 1em;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+}
+
+form label, form div {
+    display: block;
+    padding-top: 1em;
+}
+
+form label input, form label textarea {
+    -webkit-appearance: none;
+    display: block;
+    border: solid 1px #00515C;
+    border-radius: 10px;
+    padding: 0.8em;
+    margin: 0.8em auto 1.2em;
+    color: #00515C;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label input:required {
+    border-left: red solid 5px;
+}
+
+form label input:required:valid {
+    border-left: #00571A solid 5px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #00571A;
+    color: #fbf6f0;
+    border-radius: 25px;
+    padding: 0.8em 1.2em;
+    width: 100%;
+}
+
+form input.submitBtn:hover {
+    background-color: #AEE6E6;
+    color: #00571A;
+}
+
+/* Tours page */
+
+.hotspot {
+    display: flex;
+    flex-direction: column;
 }
