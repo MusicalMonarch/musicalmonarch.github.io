@@ -14,7 +14,7 @@ img {
 h1, h2, h3, h4, h5, h6, form legend {
     color: #00571A;
     font-family: 'Lemon', cursive;
-    margin: 0.8 auto;
+    margin: 0.8em auto;
 }
 
 h1 {
