@@ -201,3 +201,23 @@ footer a:hover, nav button:hover {
 #rentals-ex img {
     width: 80%;
 }
+
+/* Rentals Page */
+
+#all-rentals div table {
+    max-width: 100%;
+}
+
+#all-rentals table, #all-rentals tr, #all-rentals td, #all-rentals th {
+    border: 1px solid #00571A;
+    border-spacing: 0;
+}
+
+#all-rentals tr, #all-rentals td, #all-rentals th {
+    padding: 1em;
+}
+
+#all-rentals thead {
+    background-color: #00571A;
+    color: #fbf6f0;
+}

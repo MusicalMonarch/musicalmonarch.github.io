@@ -148,5 +148,29 @@
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
+    /* Rentals Page */
+    
+    #all-rentals {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #all-rentals div {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+
+    #all-rentals table {
+        width: 70%
+    }
+
+    #all-rentals img {
+        width: 30%;
+    }
     
 }

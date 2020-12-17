@@ -15,22 +15,22 @@ fetch(requestURL).then(function (response) {
         var thVal = ['Name', 'Max Persons', 'Half Day Reservation', 'Full Day Reservation', 'Half Day Walk-In', 'Full Day Walk-In', 'Image', 'Type'];
         //setting up a table with a thead and a tbody
         var tbl = document.createElement('table');
-        tbl.style.width = '100%';
-        tbl.setAttribute = ('border', '1');
         var thead = document.createElement('thead');
         let theadr = thead.insertRow();
-        let th = document.createElement('th');
-        th.textContent = product.name;
-        th.setAttribute('colSpan', '2');
-        theadr.appendChild(th);
+        let prodName = document.createElement('th');
+        prodName.textContent = product.name;
+        prodName.setAttribute('colSpan', '2');
+        theadr.appendChild(prodName);
         thead.appendChild(theadr);
         tbl.appendChild(thead);
         var tbody = document.createElement('tbody');
         //set up an i counter for the for in loop
         let i = 0;
+        //for loop to set up a row for every key in the rentals
         for(var key in product) {
             //if statement so that name and image are not included
             if (key == 'name' || key == 'imageurl') {
+                i++;
                 continue;
             } else {
                 //set up a row and each value
@@ -42,19 +42,20 @@ fetch(requestURL).then(function (response) {
                 td.textContent = product[key];
                 tr.appendChild(td);
             }
+            tbody.appendChild(tr);
             i++;
         }
-        tbody.appendChild(tr);
         tbl.appendChild(tbody);
-        document.getElementById('all-rentals').appendChild(tbl);
+        productInfo.appendChild(tbl);
     }
-
     //for loop to create a table for all products
     for(let i = 0; i < rentals.length; i++) {
         let rentImg = document.createElement('img');
+        var productInfo = document.createElement('div');
         rentImg.setAttribute('src', rentals[i].imageurl);
         rentImg.setAttribute('alt', rentals[i].name);
-        document.getElementById('all-rentals').appendChild(rentImg);
+        productInfo.appendChild(rentImg);
         generateTable(rentals[i]);
+        document.getElementById('all-rentals').appendChild(productInfo);
     }
 })

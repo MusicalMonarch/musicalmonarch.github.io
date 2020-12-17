@@ -64,4 +64,56 @@
         width: 70%;
     }
 
+    /* Rentals Page */
+
+    #all-rentals {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2rem repeat(2, 1fr);
+    }
+
+    #all-rentals div {
+        display: block;
+    }
+
+    #all-rentals img {
+        width: 100%;
+    }
+
+    #all-rentals h2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+    }
+
+    #all-rentals div:nth-of-type(1) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #all-rentals div:nth-of-type(2) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #all-rentals div:nth-of-type(3) {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    #all-rentals div:nth-of-type(4) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #all-rentals div:nth-of-type(5) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #all-rentals div:nth-of-type(6) {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
 }
