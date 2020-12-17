@@ -1,7 +1,7 @@
 {
     "rentalTypes": [
         {
-            "name": "~Honda Metro Scooter",
+            "name": "~Honda Metropolitan Scooter",
             "maxPersons": "1",
             "halfDayRes": "$20.00",
             "fullDayRes": "$30.00",

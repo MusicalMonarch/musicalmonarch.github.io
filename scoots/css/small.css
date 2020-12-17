@@ -202,6 +202,10 @@ footer a:hover, nav button:hover {
     width: 80%;
 }
 
+#CTA p:nth-child(2) {
+    margin: 2em 0;
+}
+
 /* Rentals Page */
 
 #all-rentals div table {
@@ -215,6 +219,10 @@ footer a:hover, nav button:hover {
 
 #all-rentals tr, #all-rentals td, #all-rentals th {
     padding: 1em;
+}
+
+#all-rentals tr td {
+    background-color: white;
 }
 
 #all-rentals thead {

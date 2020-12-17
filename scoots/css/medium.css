@@ -161,8 +161,11 @@
     #all-rentals div {
         display: flex;
         flex-direction: row;
-        flex: 1 1 100%;
         max-width: 90%;
+    }
+
+    #all-rentals h2 {
+        margin: 0 auto;
     }
 
     #all-rentals table {

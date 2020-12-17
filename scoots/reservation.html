@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="~Scoots - a motor scooter rental service for explorers in Cozumel">
-    <title>Home | ~Scoots</title>
+    <meta name="description" content="~Scoots reservation page">
+    <title>Make a Reservation</title>
 
     <link rel="shortcut icon" href="scootsicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -40,30 +40,110 @@
             <img src="images/home/homehero-1920.jpg" alt="home hero image of Cozumel">
         </picture>
         <div class="hero-message">
-            <h2>Glorious Cozumel</h2>
-            <p>Find your inner explorer and drive through the region with one of our vehicles now!</p>
+            <h2>Unlimited Mileage!</h2>
+            <p>And rentals can be returned to either location.</p>
             <p><a href="rentals.html">See Our Vehicles</a></p>
         </div>
     </section>
 
     <main>
-        <section class="hero">
-            <picture></picture>
-            <div class="hero-message">
-                <h2>Reserve Your Vehicle</h2>
-                <p>Get one step ahead and reserve a vehicle now.</p>
-                <a href="reservation.html">Reserve a vehicle</a>
-            </div>
-        </section>
+        <h2>Make a Reservation</h2>
+        <p>*A valid drivers license is required in hand at time of rental. No one under 12 years of age are allowed to ride on the scooters. Fuel charge is not included. Reservations rate requires 24 hour prior notification. Pay via Google Pay, cash, credit card, debit card, or PayPal.</p>
+        <p>Reserving a vehicle is easy.</p>
+
+        <form method="get" action="validation.html">
+            <fieldset>
+                <legend>Just fill out this form!</legend>
+                <label>Reservation Date* <input type="date" name="rentDate" required></label>
+                <label>Vehicle* <input list="rent-type" name="rentType" id="rent-choice" required></label>
+                <label>Full Name* <input type="text" name="fullName" pattern="[A-Za-z]+" minlength="5"></label>
+                <label>Phone Number* <input type="tel" name="phoneNum" required></label>
+                <label>Email <input type="text" name="email" placeholder="aFakeEmail@email.com"></label>
+                <label>Home State <input list="states-list" name="statesList" id="states-choice"></label>
+
+                <datalist id="rent-type">
+                    <option value="Honda Metropolitan"></option>
+                    <option value="Honda Dio"></option>
+                    <option value="Honda PCX150"></option>
+                    <option value="Honda Pioneer 1000"></option>
+                    <option value="4-door Jeep Wrangler"></option>
+                    <option value="2-door Jeep Wrangler"></option>
+                </datalist>
+
+                <datalist id="states-list">
+                    <option value="Alabama"></option>
+						<option value="Alaska"></option>
+						<option value="Arizona"></option>
+						<option value="Arkansas"></option>
+						<option value="California"></option>
+						<option value="Colorado"></option>
+						<option value="Connecticut"></option>
+						<option value="Delaware"></option>
+						<option value="District of Columbia"></option>
+						<option value="Florida"></option>
+						<option value="Georgia"></option>
+						<option value="Hawaii"></option>
+						<option value="Idaho"></option>
+						<option value="Illinois"></option>
+						<option value="Indiana"></option>
+						<option value="Iowa"></option>
+						<option value="Kansas"></option>
+						<option value="Kentucky"></option>
+						<option value="Louisiana"></option>
+						<option value="Maine"></option>
+						<option value="Maryland"></option>
+						<option value="Massachusetts"></option>
+						<option value="Michigan"></option>
+						<option value="Minnesota"></option>
+						<option value="Mississippi"></option>
+						<option value="Missouri"></option>
+						<option value="Montana"></option>
+						<option value="Nebraska"></option>
+						<option value="Nevada"></option>
+						<option value="New Hampshire"></option>
+						<option value="New Jersey"></option>
+						<option value="New Mexico"></option>
+						<option value="New York"></option>
+						<option value="North Carolina"></option>
+						<option value="North Dakota"></option>
+						<option value="Ohio"></option>
+						<option value="Oklahoma"></option>
+						<option value="Oregon"></option>
+						<option value="Pennsylvania"></option>
+						<option value="Rhode Island"></option>
+						<option value="South Carolina"></option>
+						<option value="South Dakota"></option>
+						<option value="Tennessee"></option>
+						<option value="Texas"></option>
+						<option value="Utah"></option>
+						<option value="Vermont"></option>
+						<option value="Virginia"></option>
+						<option value="Washington"></option>
+						<option value="West Virginia"></option>
+						<option value="Wisconsin"></option>
+						<option value="Wyoming"></option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Optional</legend>
+                <label>Cruise Line (only if applicable) <input type="text" name="cruiseLine"></label>
+                <label>Drop-off Location Request <textarea name="dropOff" id="drop-request" cols="30" rows="5"></textarea></label>
+                <label>Additional Comments or Requests <textarea name="extraInfo" id="extra-info" cols="30" rows="5"></textarea></label>
+            </fieldset>
+        </form>
     </main>
 
     <footer>
-        <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California</p>
-        <p>Last Updated: <span id="update-date"></span></p>
+        <div>
+            <p>&copy; <span id="copyright-date"></span> | Alyssa T. A. Lahoy | California</p>
+            <p>Last Updated: <span id="update-date"></span></p>
+        </div>
 
-        <a target="_blank" href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-square"></i></a>
-        <a target="_blank" href="www.twitter.com"><i class="fab fa-3x fa-twitter"></i></a>
-        <a target="_blank" href="https://www.instagram.com"><i class="fab fa-3x fa-instagram"></i></a>
+        <div>
+            <a target="_blank" href="https://www.facebook.com"><i class="fab fa-3x fa-facebook-square"></i></a>
+            <a target="_blank" href="www.twitter.com"><i class="fab fa-3x fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com"><i class="fab fa-3x fa-instagram"></i></a>
+        </div>
     </footer>
 
     <script src="js/basics.js"></script>
